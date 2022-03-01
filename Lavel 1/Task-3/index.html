@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURE CANVERTAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="templabel" onsubmit="cal1(); return false">
+        <label for="temp">PLEASE ENTER THE TEMPERATURE YOU'D LIKE TO CONVERT</label> <br>
+        <input name="tempinput" id="tempinput" type="number" placeholder="Degree" color="red">
+
+        <select name="tempselect" id="tempselect" ">
+        <option value="" disabled selected hidden>Choose Type</option>
+        <option value=" 1">°Celsius</option>
+            <option value="2">°Fahrenheit</option>
+        </select> <br>
+
+        <input name="CANVERT" type="SUBMIT" value="CANVERT">&nbsp;
+
+        <input name="RESET" type="reset" value="RESET"><br>
+        <span id="result"></span>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
