@@ -1,3 +1,7 @@
-# Todo-list WEBAPP
-A Todo list WEBAPP made in HTML,CSS,JS. It is able to add and delete events.
+# LEVEL 1 | Task - 1 : LANDING PAGE  
+## OIBSIP-MARCH2022
+- Domain : Web Development
+- Language Used : HTML,CSS
+- IDE Used : VS Code
+
 
