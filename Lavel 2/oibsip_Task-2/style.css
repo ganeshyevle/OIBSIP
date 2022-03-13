@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #302591;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 80%;
+    min-height: 100vh;
+    display: flex;   
+    align-items:center;
+    flex-direction: column;
+    margin:40px 9px;
+    padding-top: 10px;
+}
+header img{
+    width: 13rem;
+    height:180px;
+    border-radius: 60%;
+    animation: pulse 1s infinite;
+}
+header h2{
+    color: white;
+    margin: 1.5rem 0;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+header p{
+    color:rgb(255, 166, 0) ;
+}
+.apj{
+    display: flex;   
+    align-items:center;
+    flex-direction: column;
+    margin-top:-40rem;
+    padding-left:35rem;
+}
+.container{
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.1fr;
+    gap: 1rem;
+    grid-template-areas: "profile profile profile profile""edu edu edu edu""footer footer footer footer " ;
+    margin-top:-28rem;
+    padding: 3rem;
+    }
+.pro{
+    background: rgb(0, 183, 255);
+    color: black;
+    grid-area: profile;
+    padding:2rem;
+    transition: 1s;
+    border-radius: 1px 50px;       
+}
+.pro p{
+    padding:0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem; 
+}
+.pro a{
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    background: #0a3d62;
+    color: white;
+    border-radius: 1px 60px;
+    transition: 1s;
+    animation: pulse 1s infinite;
+}
+.pro a:hover{
+    color: rgb(255, 81, 0);
+    transform:scale(3.3) ;
+}
+.Bio{
+    background: orange;
+    color: black;
+    padding:2rem;
+    grid-area: edu;
+    transition: 1s;
+    border-radius: 1px 50px;
+}
+.Bio ul{
+    margin: 1rem 0;
+    padding: 0.3rem 1rem;
+}
+.Bio ul li{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+footer{
+    color:rgb(241, 241, 241);
+    background: coral;
+    grid-area: footer;
+    transition: 1s;
+    border-radius: 20px 20px;
+    padding: 1rem;
+    height:4rem;
+    text-align: center;
+}
+footer h3:hover{
+    color: rgb(0, 238, 255);
+    transform:scale(1.1) ;
+}
+.footer{
+    text-align: center;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0px rgb(0,0,0,0.5);
+    }
+    100%{
+        box-shadow: 0 0 0 30px rgba(0,0,0,0);
+    }
+}
+@media only screen and (max-width:770px) {
+    .container
+    {
+grid-template-columns:1fr;
+grid-template-rows: 0.8fr 0.6fr 0.5fr ;
+grid-template-areas: "profile" "edu" "footer";
+}
+    } 

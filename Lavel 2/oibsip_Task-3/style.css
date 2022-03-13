@@ -1,0 +1,146 @@
+html {
+    box-sizing:border-box;
+    border:orange; 
+    border-width:5px; 
+    border-style:solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    border-radius: 1px 50px;
+    animation: pulse 1s infinite;
+    margin-top: 5vh;  
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0; 
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+    padding:63px;
+  }
+  .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(98, 0, 255);
+    height: 50vh;
+    margin-top: 2vh;
+    margin-bottom: 7vh;
+    overflow-y: auto;
+    
+  }
+  .T {
+    opacity: 0.8;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    border:rgb(0, 153, 255); 
+    border-width:5px; 
+    border-style:solid;
+    border-radius: 50px 50px;
+  }
+  @keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0px rgba(236, 13, 13, 0.5);
+    }
+    100%{
+        box-shadow: 0 0 0 20px rgba(219, 12, 12, 0);
+    }
+  }
+  .T:hover{
+    background-color: yellow;
+  }
+  svg {
+    width: 64px;
+    height: 64px;
+  }
+  .TL{
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  .TI{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .TI span {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+  }
+  .D span {
+    text-decoration: line-through;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  .Tic {
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 10px 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .Tic::before {
+    content: '✓';
+    font-size: 20px;
+    display: none;
+  }
+  .D .Tic::before {
+    display: inline;
+  }
+  .DT {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  } 
+  .DT svg {
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+  } 
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  } 
+  input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 1px 50px;
+    border: 3px solid rgb(255, 94, 0);
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    animation: pulse 1s infinite;
+    margin-top: 1vh;
+  }  
+  .ES {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  } 
+  .CI {
+    margin-bottom: 20px;
+  } 
+  .EST, .empty-SD {
+    margin-bottom: 20px;
+  }
+  .TL:empty {
+    display: none;
+  }
+  .TL:empty + .ES {
+    display: flex;
+  }

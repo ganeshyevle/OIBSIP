@@ -1,0 +1,71 @@
+html{
+    background:-webkit-linear-gradient(left,#a445b2, #fa4299);
+}
+.cont {
+    max-width: 400px;
+    margin: 6vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgb(0, 132, 255);
+    animation: pulse 1s infinite;
+    border-radius: 50px 50px 5px 5px;
+    border: 3px yellow;
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    margin: 1px;
+    background-color: #fa8500;
+    border-radius: 50px 50px 1px 5px;
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0px rgba(0, 174, 255, 0.5);
+    }
+    100%{
+        box-shadow: 0 0 0 30px hsla(157, 100%, 35%, 0.048);
+    }
+}
+
+#DIS {
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+    padding: 1px 8px;
+    font-size: 30px;
+    background-color: rgb(231, 156, 238);
+    
+}
+
+.buts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.buts div {
+    border-top: 1px solid rgb(255, 72, 0);
+    border-right: 1px solid rgb(255, 0, 0);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.but {
+    border: 0.5px solid rgb(250, 101, 2);
+    line-height: 90px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#EQ {
+    background-color: rgb(85, 85, 255);
+    color: white;
+    
+}
+#EQ:hover{
+    background-color:rgb(217, 255, 0);
+}
+
+.but:hover {
+    background-color: #fa8500;
+    color: rgb(238, 255, 0);
+    transition: 0.5s ease-in-out;
+}

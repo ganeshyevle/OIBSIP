@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #302591;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header img{
+    width: 10rem;
+    height:auto;
+    border-radius: 60%;
+    animation: pulse 1s infinite;
+
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0px rgb(0,0,0,0.5);
+    }
+    100%{
+        box-shadow: 0 0 0 30px rgba(0,0,0,0);
+    }
+}
+header h3{
+    color: white;
+    margin: 1.5rem 0;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+header p{
+    color:rgb(255, 166, 0) ;
+}
+.arrow{
+    color: orangered ;
+    margin-top: 5rem;
+    font-size: 5rem;
+    animation: arrow 2s infinite;
+}
+@keyframes arrow{
+    0%{color:rgba(5, 228, 217, 0.5);}
+    50%{color:orangered}
+    100%{color:rgba(5, 228, 217, 0.5);}
+}
+.container{
+    width: 100%;
+    min-height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.8fr 0.2fr;
+    gap: 1rem;
+    grid-template-areas: "profile profile skills skills" "edu edu lang lang" "contact contact exp exp" "footer  footer   footer   footer" ;
+    padding: 2rem;    
+    }
+
+.profile{
+    background: rgb(0, 183, 255);
+    color: black;
+    grid-area: profile;
+    padding:2rem;
+    transition: 1s;
+    border-radius: 1px 50px;
+}
+.skills{
+    background: rgb(255, 123, 0);
+    color: black;
+    padding:2rem;
+    grid-area: skills;
+    transition: 1s;
+    border-radius: 50px 1px;
+}
+.edu{
+    background: orange;
+    color: black;
+    padding:2rem;
+    grid-area: edu;
+    transition: 1s;
+    border-radius: 1px 50px;
+}
+.lang{
+    background: rgb(0, 183, 255);
+    color: black;
+    padding:2rem;
+    grid-area: lang;
+    transition: 1s;
+    border-radius: 50px 1px;
+}
+.contact{
+    background: orange;
+    color: black;
+    padding:2rem;
+    grid-area: contact;
+    transition: 1s;
+    border-radius: 1px 50px;
+}
+.exp{
+    background:rgb(0, 183, 255);
+    color: black;
+    padding:2rem;
+    grid-area: exp;
+    transition: 1s;
+    border-radius: 50px 1px;
+}
+footer{
+    color:white;
+    background: coral;
+    grid-area: footer;
+    transition: 1s;
+    border-radius: 20px 20px;
+}
+h2{
+    margin-bottom: 1rem;
+}
+.profile p{
+    padding:0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem; 
+}
+.profile a{
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    background: #0a3d62;
+    color: white;
+    border-radius: 1px 60px;
+}
+.skills div{
+    width: 100%;
+    padding: 0.1rem 1rem;
+}
+.skills div progress[value]{
+width: 100%;
+height: 1rem;
+}
+.skills div progress[value]::-webkit-progress-bar {
+    background-color:green;
+}
+.edu h2{
+    letter-spacing: 0.1rem;
+}
+.edu h3{
+    padding:0.1rem 0rem;
+    text-align: justify;
+    line-height: 2.1rem; 
+}
+.edu a{
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    background: #0a3d62;
+    color: white;
+    border-radius: 1px 60px;
+}
+.lang ul{
+    margin: 1rem 0;
+    padding: 0.3rem 1rem;
+}
+.lang ul li{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.contact div i{
+    margin-right: 0.2rem;   
+}
+.contact p {
+    margin: 2rem 0;
+    cursor: pointer;
+    font-size: 20px;  
+}
+.contact p a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.exp p{
+        padding:0.3rem 1rem;
+        text-align: justify;
+        line-height: 2.2rem; 
+}
+.footer1 h3:hover{
+        color: #0a3d62;;
+}
+.footer1 i{
+    background: rgb(255, 255, 255);
+    color: black;
+    padding: 0.5rem;
+    margin: 1rem 0.2rem;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.footer1 i:hover{ 
+    background: #0a3d62;
+    color: white;
+    cursor: pointer;
+}
+.footer1{
+    text-align: center;
+}
+@media only screen and (max-width:770px) {
+    .container
+    {
+grid-template-columns:1fr;
+grid-template-rows: 0.8fr 0.6fr 1fr 0.6fr 0.5fr 0.8fr 0.1fr;
+grid-template-areas: "profile" "skills" "edu" "lang" "contact" "exp""footer";
+}
+    } 
